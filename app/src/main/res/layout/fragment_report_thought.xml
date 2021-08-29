@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/report_thought_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ReportThoughtFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/report_thought_card_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="7dp"
+            app:contentPadding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/first_step_thought_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/color_radio_group"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:text="Descripción Categoria 1" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:text="Descripción Categoria 2" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:text="Descripción Categoria 3" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:text="Descripción Categoria 4" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:text="Descripción Categoria 5" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/color_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <RadioButton
+                            android:id="@+id/color_radio_button_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Categoria 1"
+                            app:buttonTint="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/color_radio_button_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Categoria 2"
+                            app:buttonTint="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/color_radio_button_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Categoria 3"
+                            app:buttonTint="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/color_radio_button_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Categoria 4"
+                            app:buttonTint="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/color_radio_button_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="Categoria 5"
+                            app:buttonTint="#000000" />
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            app:chipBackgroundColor="#C39BD3" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip8"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:chipBackgroundColor="#7FB3D5" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip9"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:chipBackgroundColor="#48C9B0" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip10"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:chipBackgroundColor="#F7DC6F" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip11"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:chipBackgroundColor="#DC7633" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/first_step_cancel_thought_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+                    <ImageButton
+                        android:id="@+id/next_step_thought_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@android:drawable/ic_media_play" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_step_thought_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <EditText
+                    android:id="@+id/report_thought_title_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/create_thought_title_hint"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/report_thought_description_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/create_thought_description_hint"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/previus_step_thought_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@android:drawable/ic_menu_revert" />
+
+                    <ImageButton
+                        android:id="@+id/second_step_cancel_thought_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+                    <ImageButton
+                        android:id="@+id/save_thought_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@android:drawable/ic_menu_save" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

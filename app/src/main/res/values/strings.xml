@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tagebuch</string>
+    <string name="add_new_thought">Add new thought button</string>
+    <string name="looong_text"> Add new thought button Add new thought button Add new thought button Add new thought button Add new thought button Add new thought button</string>
+    <string name="create_thought_title_hint">Titulo</string>
+    <string name="create_thought_description_hint">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
